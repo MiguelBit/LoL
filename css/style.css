@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background: linear-gradient(#c20057, #81003a) ;
+    padding: 10px 0;
+}
+
+.logo-desktop{
+    float: right;
+}
+
+.logo-desktop a{
+    color: white;
+    font-size: 25px;
+}
+
+nav.mobile{
+    display: none;
+}
+
+nav.desktop{
+    float: left;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+
+section.banner{
+    background-image: url('../images/Banner.jpg');
+    max-width: 1400px;
+    background-position: center;
+    height: 100%;
+}
+
+section.sobre-site{
+    padding: 30px 2%;
+    background-color: rgb(20, 0, 77);
+}
+
+section.sobre-site h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+section.sobre-site p{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section.champions-lol{
+    background-color: rgb(15, 0, 58);
+}
+
+.champion{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.champion img{
+    max-width: 80vw;
+}
+
+.champion img:not(.one){
+    display: none;
+}
+
+.champion h2{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.champion p{
+    text-align: center;
+    color: white;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.champion img{
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: rgb(20, 0, 77);
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px){
+     nav.desktop{
+        display: none;
+    }
+
+    nav.mobile p{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    nav.mobile{
+        position: relative;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    nav.mobile h3{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+    }
+
+    nav.mobile ul{
+        display: none;
+        background-color: #81003a;
+        position: absolute;
+        left: -2%;
+        top: 29px;
+        width: 104%;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        padding: 8px 0;
+        border-top: 1px solid white;
+    }
+
+    nav.mobile a{
+        color: white;
+        text-decoration: none;
+    }
+
+}
