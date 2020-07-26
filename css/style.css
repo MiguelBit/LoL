@@ -62,6 +62,7 @@ section.banner{
     background-image: url('../images/Banner.jpg');
     max-width: 1400px;
     background-position: center;
+    background-size: cover;
     height: 100%;
 }
 
